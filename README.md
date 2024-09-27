@@ -31,7 +31,6 @@ subnet 20.20.20.0 netmask 255.255.255.224 {
     option domain-name-servers 8.8.8.8, 8.8.4.4;
     option domain-name "exmaple.com";
 }
-
 ```
 
 
@@ -42,14 +41,12 @@ Despues de configurar el server lo reiniciamos, lo puedes hacer con el siguiente
 
 ```
 sudo systemctl restart isc-dhcp-server
-
 ```
 ## 3ºConfiguracion del cliente.
 Lo primero es descargar `isc-dhcp-client`
 
 ```
 sudo apt-get install isc-dhcp-client
-
 ```
 
 Ahora se pondra el siguiente comando `ip a`, para ver tu ip actual. 
@@ -63,7 +60,6 @@ Y para asignar uan nueva sera con este comando.
 
 ```
 sudo dhclient
-
 ```
 
 Ahora comprobarecos que la ip de ahora no concuerda con la que nos dio el comando `ip a` y ahora estaremos dentro del rango que queremos.
